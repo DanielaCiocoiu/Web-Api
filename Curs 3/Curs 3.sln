@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Curs 3", "Curs 3\Curs 3.csproj", "{2AC23427-E69C-4150-9FB8-1085858C7744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{B252E92A-E902-4F9C-9FDC-5CFC6836F7C8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AC23427-E69C-4150-9FB8-1085858C7744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC23427-E69C-4150-9FB8-1085858C7744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC23427-E69C-4150-9FB8-1085858C7744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC23427-E69C-4150-9FB8-1085858C7744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B252E92A-E902-4F9C-9FDC-5CFC6836F7C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B252E92A-E902-4F9C-9FDC-5CFC6836F7C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B252E92A-E902-4F9C-9FDC-5CFC6836F7C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B252E92A-E902-4F9C-9FDC-5CFC6836F7C8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
