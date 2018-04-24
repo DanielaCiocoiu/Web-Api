@@ -5,24 +5,36 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.OData;
 
 namespace Curs4_CodeFirst_.Controllers
 {
     public class EmployeesController : ApiController
     {
+        [EnableQuery]
         public HttpResponseMessage GetEmployees()
-       
+
         {
-            using (EmployeeDbContext context = new EmployeeDbContext())
+
+             IQueryable<Employee> employees = null;
+
+            EmployeeDbContext context = new EmployeeDbContext();
+
+            employees = context.Employees.AsQueryable();
+
+
+            return Request.CreateResponse(HttpStatusCode.OK, employees);
+
+            //using (EmployeeDbContext context = new EmployeeDbContext())
           
-            {
-                var employees = context.Employees.ToList();
+            //{
+            //    var employees = context.Employees.ToList();
 
-                if (employees == null)
-                    return Request.CreateResponse(HttpStatusCode.NotFound, "Nu a fost gasit nicun anagajat!");
+            //    if (employees == null)
+            //        return Request.CreateResponse(HttpStatusCode.NotFound, "Nu a fost gasit nicun anagajat!");
 
-                return Request.CreateResponse(HttpStatusCode.OK, employees);
-            }
+            //    return Request.CreateResponse(HttpStatusCode.OK, employees);
+            //}
 
         }
     }

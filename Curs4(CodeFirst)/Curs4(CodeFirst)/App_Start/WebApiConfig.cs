@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.OData.Extensions;
 
 namespace Curs4_CodeFirst_
 {
@@ -9,6 +10,7 @@ namespace Curs4_CodeFirst_
     {
         public static void Register(HttpConfiguration config)
         {
+            config.AddODataQueryFilter();
             // Web API configuration and services
 
             // Web API routes
