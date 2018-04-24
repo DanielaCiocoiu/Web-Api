@@ -3,7 +3,7 @@ namespace Curs_3_1_.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Initial : DbMigration
+    public partial class Initial : DbMigration//mostenim din clasa abstr si implementam
     {
         public override void Up()
         {

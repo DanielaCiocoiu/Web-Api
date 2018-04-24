@@ -15,8 +15,9 @@ namespace Curs_3_1_.Models
         // For more information refer to the documentation:
         // http://msdn.microsoft.com/en-us/data/jj591621.aspx
     
-        public Curs_3_1_Context() : base("name=Curs_3_1_Context")
+        public Curs_3_1_Context() : base("name=Curs_3_1_Context")//va lua constr din clasa de baza, ne config in web config iar el va face conex cu baza de date
         {
+
         }
 
         public System.Data.Entity.DbSet<Curs_3_1_.Models.Customer> Customers { get; set; }
